@@ -29,6 +29,7 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
     })->name('dashboard');
 
     Route::resource('posts', PostController::class);
+    
 });
 
 // 🛡️ Tutte le rotte di autenticazione (registrazione, login ecc...)

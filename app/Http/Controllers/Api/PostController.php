@@ -13,4 +13,9 @@ class PostController extends Controller
 
         return $posts;
     }
+    public function show($type){
+        $post = Post::where('type', $type)->first();
+
+        return $post;
+    }
 }
